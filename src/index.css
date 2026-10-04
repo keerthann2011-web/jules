@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-on-background font-body-md;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .font-display-hero { font-family: 'Playfair Display', serif; font-size: 56px; font-weight: 700; line-height: 64px; letter-spacing: -0.02em; }
+  .font-display-hero-mobile { font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 700; line-height: 44px; letter-spacing: -0.01em; }
+  .font-headline-lg { font-family: 'Playfair Display', serif; font-size: 40px; font-weight: 600; line-height: 48px; letter-spacing: -0.01em; }
+  .font-headline-lg-mobile { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 600; line-height: 36px; }
+  .font-headline-md { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 600; line-height: 36px; }
+  .font-headline-sm { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 600; line-height: 28px; }
+  .font-title-lg { font-family: 'DM Sans', sans-serif; font-size: 20px; font-weight: 600; line-height: 28px; }
+  .font-title-md { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 600; line-height: 24px; }
+  .font-body-lg { font-family: 'DM Sans', sans-serif; font-size: 18px; font-weight: 400; line-height: 28px; }
+  .font-body-md { font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; }
+  .font-body-sm { font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 400; line-height: 20px; }
+  .font-label-md { font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 700; line-height: 16px; letter-spacing: 0.06em; }
+  .font-label-sm { font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 600; line-height: 14px; letter-spacing: 0.04em; }
+
+  /* Add similar classes for text sizes mapped to design system if necessary, but we can just use the utility classes above. */
+  .text-display-hero { font-size: 56px; line-height: 64px; letter-spacing: -0.02em; }
+  .text-display-hero-mobile { font-size: 36px; line-height: 44px; letter-spacing: -0.01em; }
+  .text-headline-lg { font-size: 40px; line-height: 48px; letter-spacing: -0.01em; }
+  .text-headline-lg-mobile { font-size: 28px; line-height: 36px; }
+  .text-headline-md { font-size: 28px; line-height: 36px; }
+  .text-headline-sm { font-size: 22px; line-height: 28px; }
+  .text-title-lg { font-size: 20px; line-height: 28px; }
+  .text-title-md { font-size: 16px; line-height: 24px; }
+  .text-body-lg { font-size: 18px; line-height: 28px; }
+  .text-body-md { font-size: 15px; line-height: 24px; }
+  .text-body-sm { font-size: 13px; line-height: 20px; }
+  .text-label-md { font-size: 12px; line-height: 16px; letter-spacing: 0.06em; }
+  .text-label-sm { font-size: 11px; line-height: 14px; letter-spacing: 0.04em; }
+}
+
+/* Hide scrollbar for lenis and generic clean look */
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scrollbar-width: none;
+}
